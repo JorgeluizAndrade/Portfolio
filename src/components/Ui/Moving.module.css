@@ -1,0 +1,47 @@
+/* .scrollBg {
+    -webkit-animation-name: scrollSmall;
+    animation-name: scrollSmall;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes scrollSmall {
+    0% {
+      transform: translateX(0%) translateZ(0px) translateY(0px);
+    }
+  
+    to {
+      transform: translateX(100%) translateZ(0px) translateY(0px);
+    }
+  }
+  
+  @keyframes scrollSmall {
+    0% {
+      transform: translateX(0%) translateZ(0px) translateY(0px);
+    }
+  
+    to {
+      transform: translateX(-100%) translateZ(0px) translateY(0px);
+    }
+  }
+ */
+
+ .scrollBg {
+  animation: scrollSmall 20s linear infinite;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+@keyframes scrollSmall {
+  0% {
+    transform: translateX(0%) translateZ(0px) translateY(0px);
+  }
+
+  to {
+    transform: translateX(-100%) translateZ(0px) translateY(0px);
+  }
+}
