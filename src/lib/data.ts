@@ -73,7 +73,7 @@ export const projectsData = [
     tags: ["Typescript", "React", "Next.js", "Framer Motion", "Tailwind Css", "Resend-Email"],
     imageUrl: portifio,
     linkProject: "#",
-    linkGithub:"#"
+    linkGithub:"https://github.com/JorgeluizAndrade/Portfolio"
   },
 ] as const;
 
