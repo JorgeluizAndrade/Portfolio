@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import avatar from "../../public/avatar.jpg";
 import { useSectionInView } from "@/lib/hooks";
+import MobileTechNotices from "./MobileTechNotices";
 
 type Props = {};
 
@@ -71,13 +72,18 @@ export default function TechNotices({}: Props) {
     >
       <SectionHeading>Tech Notícias☕</SectionHeading>
 
-      <div className="flex flex-none space-x-8 overflow-hidden sm:overflow-hidden justify-center items-center">
+      <div className="md:hidden">
+        <MobileTechNotices 
+        />
+      </div>
+
+      <div className="hidden md:flex flex-none space-x-8 overflow-hidden sm:overflow-hidden justify-center items-center">
         <div className="flex flex-none">
           {data &&
             data.map((item) => (
               <div
                 key={item.id}
-                className={`card-container shadow-[-17px_-2px_41px_3px_#4fd1c5] max-w-lg min-w-lg  ${Styles.scrollBg} rounded-b-md rounded-t-md transform rotate-12`}
+                className={`card-container shadow-[-17px_-2px_41px_3px_#4fd1c5] max-w-lg min-w-lg   ${Styles.scrollBg} rounded-b-md rounded-t-md transform rotate-12`}
               >
                 <div className="top-text p-8">
                   <div className="icon-quotes">
@@ -126,7 +132,7 @@ export default function TechNotices({}: Props) {
                       </div>
                     </div>
                   </div>
-                  <div className="twitter-icon my-auto">
+                  <div className="my-auto">
                     <a
                       href={`https://www.tabnews.com.br/${item.owner_username}/${item.slug}`}
                     >
@@ -138,9 +144,9 @@ export default function TechNotices({}: Props) {
                       >
                         <motion.path
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="1.5"
                           d="M10.75 8.75L14.25 12L10.75 15.25"
                           initial={{ pathLength: 0 }}
                           animate={{ pathLength: 1 }}
