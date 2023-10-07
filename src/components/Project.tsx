@@ -6,6 +6,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {  FaGithub } from "react-icons/fa";
+import { Chip } from "@nextui-org/react";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -82,12 +83,16 @@ export default function Project({
 
         <div className="mt-4">
           {tags.map((tag, index) => (
-            <span
-              className="inline-block bg-black/20  px-2 py-2 text-xs font-semibold mr-2 mt-2 text-white gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-black active:scale-105 transition"
+            <Chip
+            variant="shadow"
+            classNames={{
+              base: "bg-gradient-to-br from-indigo-500 to-pink-500 mr-2 mt-1 border-small border-white/50 shadow-pink-500/30",
+              content: "drop-shadow shadow-black text-white",
+              }}
               key={index}
             >
               {tag}
-            </span>
+            </Chip>
           ))}
         </div>
       </div>
