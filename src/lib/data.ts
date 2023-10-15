@@ -1,6 +1,8 @@
 import portifio from "../../public/potifolio.png";
 import pinguimchat from "../../public/pinguimchat.png";
 import pigpay from "../../public/pigpay.png";
+import devqizz from "../../public/dev.quizz.png";
+
 
 export const links = [
   {
@@ -48,6 +50,14 @@ export const projectsData = [
     imageUrl: pigpay,
     linkProject: "https://pigpay.vercel.app/",
     linkGithub:"https://github.com/JorgeluizAndrade/Pigpay-Reactjs",  
+  },
+  {
+    title: "Dev.quizz",
+    description: "O projeto é um Quiz voltado para desenvolvedores de software, projetado para desafiar seus conhecimentos e aprimorar suas habilidades. Ele utiliza a API da OpenAI, especificamente o GPT-3 Turbo, um poderoso modelo de linguagem, para gerar perguntas com as quais os desenvolvedores podem interagir.",
+    tags: ["Typescript", "React", "Next.js", "Framer Motion", "Tailwind Css", "NextUi", "Prisma", "PlanetScale"," API OpenAI"],
+    imageUrl: devqizz,
+    linkProject: "https://dev-quizz-eosin.vercel.app/dashboard",
+    linkGithub:"https://github.com/JorgeluizAndrade/dev.quizz"
   },
   {
     title: "Pinguim-chat",
