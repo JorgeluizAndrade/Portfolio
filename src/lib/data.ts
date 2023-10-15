@@ -83,6 +83,8 @@ export const skillsData = [
   "React",
   "Next.js",
   "Node.js",
+  "Prisma",
+  "Planetscale",
   "Tailwind CSS",
   "Redux",
   "Redux Toolkit",
