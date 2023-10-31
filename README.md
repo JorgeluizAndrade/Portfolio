@@ -12,6 +12,8 @@ In this project, we are making use of the following technologies:
  <li> Next.js</li>
 <li>React.js</li>
 <li>Tailwind CSS</li>
+ <li>SWR</li>
+<li>NextUi</li>
 <li>Framer motion</li>
 <li>Resend-Email</li>
 </ul>
