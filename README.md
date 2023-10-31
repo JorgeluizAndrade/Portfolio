@@ -1,6 +1,8 @@
 ## My Portifólio
 Welcome to my Portifólio.
 
+![potifolio](https://github.com/JorgeluizAndrade/Portfolio/assets/124687870/1ae26d5d-6359-4e6a-9c95-bbf6bda35672)
+
 ## Introduction
 This portfolio showcases my work and projects, demonstrating the technologies and skills I have utilized to create them.
 
